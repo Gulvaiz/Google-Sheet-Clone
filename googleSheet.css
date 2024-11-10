@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#spreadsheet-container{
+    display: grid;
+    grid-template-rows: repeat(20, 100px);
+    grid-template-columns: 50px repeat(26, 100px);
+}
+
+.heading-container {
+     padding: 10px;
+      text-align: center;
+}
+
+.cell{
+    border: 1px solid gray;
+}
+
+.header-cell{
+    background-color: rgb(135, 236, 202);
+    font-weight: bold;
+    text-align: center;
+}
+
+.selected-cell{
+    border: 2px solid rgb(102, 203, 77);
+}
+
+.buttons{
+     display: flex;
+     padding: 10px;
+     align-items: center;
+     background-color: rgb(190, 233, 221);
+}
+
+button{
+    margin:0px 5px ;
+}
+
+i{
+    font-size: 12px;
+    padding: 9px;
+    
+}
+
+.textc, .bgcolor, .fontF, .fontS{
+    font-weight: bold;
+    margin: 0px 12px;
+}
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="googleSheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+      
+    <div class="heading-container"><h3>Google Sheets</h3></div>
+    <div class="buttons"> 
+
+              <button id="copytoclip" onClick="copyToClip()"><i class="fa-regular fa-clipboard"></i></button>     
+
+              <button id="bold" onClick="makeBold()"> <i class="fa-solid fa-bold"></i> </button>
+              <button id="italic" onClick="makeItalic()"><i class="fa-solid fa-italic"></i> </button> 
+              <button id="underline" onClick="makeUnderlined()"><i class="fa-solid fa-underline"></i></button>
+              
+              <div class="textc">
+              <label for="text-color">Text Color:</label>
+              <input type="color" value="#ADFF2F" id="text-color" name="text-color">
+            </div>
+              <!-- background color -->
+               <div class="bgcolor">
+              <label for="bg-color">Background-color:</label>
+              <input type="color" value="" id="background-color" name="bg-color">
+              </div> 
+
+              <div class="alignT">
+              <button onClick="alignLeft()"><i class="fa-solid fa-align-left"></i></button>
+                <button onClick="alignCenter()"><i class="fa-solid fa-align-center"></i></button>
+                <button onClick="alignRight()"><i class="fa-solid fa-align-right"></i></button>
+               </div>
+
+               <div class="fontF">
+                <!-- font family can be changed -->
+                 <label for="Font-family">Font-family:</label>
+                <select name="Font-family" id="font-family">
+                    <option value="ariel" class="option" selected>Ariel</option>
+                    <option value="roman" class="option">Times New Roman</option>
+                    <option value="serif" class="option">Serif</option>
+                    <option value="cursive" class="option">Cursive</option>
+                </select>
+               </div>
+ 
+               <div class="fontS">
+                <!-- font weight and sizes -->
+                 <label for="font-size">Font-size:</label>
+                <select name="font-size" id="font-size">
+                    <option value="12px">12</option>
+                    <option value="14px" selected>14</option>
+                    <option value="16px">16</option>
+                    <option value="18px">18</option>
+                    <option value="20px">20</option>
+                    <option value="22px">22</option>
+                </select>
+                </div>
+       </div>
+
+      <div id="spreadsheet-container"></div>
+
+      <script src="googleSheet.js"></script>
+</body>
+</html>
